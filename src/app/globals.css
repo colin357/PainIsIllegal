@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 0 0% 8%;
+    --card: 40 33% 97%;
+    --card-foreground: 0 0% 8%;
+    --primary: 38 66% 48%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 40 33% 98%;
+    --muted: 40 20% 92%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 38 66% 48%;
+    --accent-foreground: 40 33% 98%;
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 38 66% 48%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    @apply bg-ivory-50 text-charcoal-900 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Subtle background pattern */
+.bg-pattern {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(212, 168, 83, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(212, 168, 83, 0.03) 0%, transparent 50%);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(212, 168, 83, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 168, 83, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(212, 168, 83, 0.2);
+}
