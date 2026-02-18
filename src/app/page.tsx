@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import {
   Video,
   MapPin,
@@ -35,52 +36,76 @@ function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16 lg:pt-32">
-        <div className="max-w-3xl">
-          <FadeIn delay={0.1}>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-600 text-sm font-medium mb-8">
-              <Sparkles className="h-4 w-4" />
-              Revolutionary holistic guidance
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Text content */}
+          <div>
+            <FadeIn delay={0.1}>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 text-gold-600 text-sm font-medium mb-8">
+                <Sparkles className="h-4 w-4" />
+                Revolutionary holistic guidance
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif font-bold text-charcoal-900 leading-[1.1] tracking-tight">
+                Your pain is not
+                <br />
+                <span className="text-gold-500">something to accept.</span>
+              </h1>
+            </FadeIn>
+
+            <FadeIn delay={0.35}>
+              <p className="mt-6 text-lg sm:text-xl text-charcoal-700/80 max-w-xl leading-relaxed">
+                Ethelyn offers personalized, holistic evaluations and treatment plans
+                designed to help you understand the root contributors to your
+                discomfort — and take decisive steps toward relief.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.5}>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg">
+                  <Link href="/book?tab=zoom">
+                    <Video className="mr-2 h-5 w-5" />
+                    Book a Zoom Evaluation
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/book?tab=inperson">
+                    <MapPin className="mr-2 h-5 w-5" />
+                    Book an In-Person Session
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.65}>
+              <p className="mt-6 text-sm text-charcoal-700/50">
+                Virtual evaluations available nationwide. In-person sessions in
+                Arizona.
+              </p>
+            </FadeIn>
+          </div>
+
+          {/* Hero image */}
+          <FadeIn delay={0.3} direction="right">
+            <div className="relative">
+              <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80"
+                  alt="Holistic healing session — calm, professional wellness environment"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+                {/* Warm overlay for brand cohesion */}
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/20 via-transparent to-gold-400/5" />
+              </div>
+              {/* Decorative accents */}
+              <div className="absolute -bottom-4 -left-4 h-28 w-28 rounded-2xl bg-gold-500/10 -z-10" />
+              <div className="absolute -top-4 -right-4 h-20 w-20 rounded-2xl bg-gold-400/10 -z-10" />
             </div>
-          </FadeIn>
-
-          <FadeIn delay={0.2}>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-charcoal-900 leading-[1.1] tracking-tight">
-              Your pain is not
-              <br />
-              <span className="text-gold-500">something to accept.</span>
-            </h1>
-          </FadeIn>
-
-          <FadeIn delay={0.35}>
-            <p className="mt-6 text-lg sm:text-xl text-charcoal-700/80 max-w-xl leading-relaxed">
-              Ethelyn offers personalized, holistic evaluations and treatment plans
-              designed to help you understand the root contributors to your
-              discomfort — and take decisive steps toward relief.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={0.5}>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg">
-                <Link href="/book?tab=zoom">
-                  <Video className="mr-2 h-5 w-5" />
-                  Book a Zoom Evaluation
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/book?tab=inperson">
-                  <MapPin className="mr-2 h-5 w-5" />
-                  Book an In-Person Session
-                </Link>
-              </Button>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.65}>
-            <p className="mt-6 text-sm text-charcoal-700/50">
-              Virtual evaluations available nationwide. In-person sessions in
-              Arizona.
-            </p>
           </FadeIn>
         </div>
       </div>
