@@ -17,8 +17,11 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-ivory-200/60">
               <MapPin className="h-4 w-4 text-gold-400" />
-              <span>Arizona, United States</span>
+              <span>Scottsdale, Arizona</span>
             </div>
+            <p className="text-sm text-ivory-200/60">
+              Call/Text: 480-549-7188
+            </p>
           </div>
 
           {/* Navigation */}
@@ -30,6 +33,7 @@ export function Footer() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/services", label: "Services" },
+                { href: "/massage", label: "Ethelyn's Massage" },
                 { href: "/about", label: "About Ethelyn" },
                 { href: "/book", label: "Book a Session" },
                 { href: "/legal", label: "Legal & Disclaimers" },
