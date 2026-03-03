@@ -471,7 +471,7 @@ function ServicesSection() {
                       60-minute session
                     </span>
                     <span className="text-xl font-serif font-bold text-charcoal-900">
-                      $100
+                      $90
                     </span>
                   </div>
                   <div className="flex items-baseline justify-between">
@@ -479,7 +479,7 @@ function ServicesSection() {
                       90-minute session
                     </span>
                     <span className="text-xl font-serif font-bold text-charcoal-900">
-                      $130
+                      $120
                     </span>
                   </div>
                 </div>
@@ -865,7 +865,7 @@ function FAQSection() {
     {
       question: "How much does it cost?",
       answer:
-        "Zoom evaluations are priced upon consultation. In-person sessions in Arizona are $100 for 60 minutes or $130 for 90 minutes. These include both the holistic evaluation and therapeutic massage. Visit our massage page for the full menu of massage services.",
+        "Zoom evaluations are priced upon consultation. In-person sessions in Arizona are $90 for 60 minutes or $120 for 90 minutes. These include both the holistic evaluation and therapeutic massage. Visit our massage page for more details.",
     },
     {
       question: "What is your cancellation policy?",

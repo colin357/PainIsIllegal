@@ -27,116 +27,20 @@ interface MassageService {
 /* ─────────────────────── DATA ─────────────────────── */
 const services: MassageService[] = [
   {
-    category: "Relaxation",
-    name: "Relaxation & Relief Massage",
-    price: 85,
-    duration: "60 Minutes",
-    description:
-      "Experience a soothing 60-minute relaxation massage designed to alleviate stress and tension in the body. This treatment uses intuitive therapy to gently release tension and promote relaxation, enhancing your overall well-being. Hot towels are added to melt your cares away.",
-  },
-  {
-    category: "Relaxation",
-    name: "Relaxation Massage",
-    price: 105,
-    duration: "90 Minutes",
-    description:
-      "Blends long, flowing strokes with gentle kneading techniques to melt away tension and induce profound relaxation. This soothing treatment improves circulation, reduces stress, and fosters a renewed sense of well-being, ensuring you leave feeling revitalized and invigorated.",
-  },
-  {
-    category: "Therapeutic",
-    name: "Therapeutic Massage to Address Pain & Relaxation",
-    price: 85,
-    duration: "60 Minutes",
-    description:
-      "Manipulation of the body's soft tissue to help heal by stimulating circulation and promoting relaxation.",
-  },
-  {
-    category: "Therapeutic",
-    name: "Therapeutic Massage for Pain Relief & Relaxation",
-    price: 125,
-    duration: "90 Minutes",
-    description:
-      "Focuses on the manipulation of soft tissues to alleviate discomfort and enhance circulation. This 90-minute session is designed to promote relaxation and support overall well-being, helping to release tension and improve mobility.",
-  },
-  {
-    category: "Lymphatic",
-    name: "Lymphatic Massage",
-    price: 100,
-    duration: "60 Minutes",
-    description:
-      "Deeper Lymphatic FLUSH to RELEASE Toxins for Weight Loss and Post Surgery. Lymphatic Massage is VERY life-giving because it releases toxins if done deep enough. Certain conditions need more specific massage from a practiced therapist.",
-  },
-  {
-    category: "Sports",
-    name: "Sports Massage for Agility, Endurance & Pain Relief",
-    price: 100,
-    duration: "60 Minutes",
-    description:
-      "Specifically designed to address the unique needs of athletes by releasing muscle tension and enhancing overall performance. This targeted treatment not only alleviates discomfort but also promotes recovery, helping athletes achieve optimal balance and agility.",
-  },
-  {
-    category: "Sports",
-    name: "Sport Massage for Agility, Endurance & Pain Relief",
-    price: 150,
-    duration: "90 Minutes",
-    description:
-      "Targets the specific needs of athletes by effectively releasing muscle tension and improving overall flexibility. This 90-minute session aims to enhance performance and aid recovery, ensuring you feel balanced and rejuvenated.",
-  },
-  {
-    category: "Hot Stone",
-    name: "Hot Stone Massage",
-    price: 100,
-    duration: "60 Minutes",
-    description:
-      "A delightful warm treatment using heated stones to rub away tension.",
-  },
-  {
-    category: "Hot Stone",
-    name: "Hot Stone & Hot Towel Massage",
-    price: 125,
-    duration: "90 Minutes",
-    description:
-      "A delightful warm treatment using warm stones to melt away tension and hot towels to buff the body.",
-  },
-  {
-    category: "Medical",
-    name: "Medical Massage: Fibromyalgia, Oncology, Chronic Pain Syndrome",
-    price: 105,
-    duration: "60 Minutes",
-    description:
-      "Focuses on alleviating pain and discomfort associated with specific conditions and pathologies. This specialized therapy combines targeted techniques to promote healing, enhance mobility, and improve overall well-being. Specific doctor's instructions will be applied to health concerns.",
-  },
-  {
-    category: "Medical",
-    name: "Medical Massage: Fibromyalgia, Oncology, Chronic Pain Syndrome",
-    price: 150,
-    duration: "90 Minutes",
-    description:
-      "Specifically designed to alleviate symptoms associated with fibromyalgia, oncology treatments, and chronic pain syndromes. This 90-minute session focuses on therapeutic techniques tailored to enhance recovery and overall well-being.",
-  },
-  {
-    category: "Foot Reflexology",
-    name: "Foot Reflexology with Hot Towel, Shoulder & Scalp Massage",
-    price: 80,
-    duration: "60 Minutes",
-    description:
-      "Acupressure and massage to the feet, toes & ankles after a foot hot towel wrap and a shoulder, face & scalp massage. Reflexology helps stimulate internal organs that the outward musculature cannot address. This is a real and life-giving therapy.",
-  },
-  {
-    category: "Pregnancy",
-    name: "Pregnancy Massage for Relaxation & Relief",
-    price: 85,
-    duration: "60 Minutes",
-    description:
-      "Offers a soothing experience designed to alleviate common aches and pains associated with pregnancy. This specialized therapy promotes relaxation, reduces stress, and enhances overall well-being for expectant mothers.",
-  },
-  {
-    category: "Migraine",
-    name: "Migraine Massage for Scalp, Face, Neck & Shoulders, Plus TMJ and Sinuses",
+    category: "Massage",
+    name: "Therapeutic Massage",
     price: 90,
     duration: "60 Minutes",
     description:
-      "Hot towel treatment plus gentle aroma therapy for sinuses. Expert care to help with headaches and migraines through intuitive technique — gently but firmly releasing neck muscles and inflamed areas on the scalp and jaw.",
+      "A personalized 60-minute massage session combining relaxation and therapeutic techniques to alleviate stress, tension, and pain. This treatment uses intuitive therapy to gently release tension, stimulate circulation, and promote overall well-being. Hot towels included.",
+  },
+  {
+    category: "Massage",
+    name: "Therapeutic Massage",
+    price: 120,
+    duration: "90 Minutes",
+    description:
+      "An extended 90-minute massage session blending deep tissue work, gentle kneading, and flowing strokes to melt away tension and address chronic pain. This soothing treatment improves circulation, reduces stress, and fosters a renewed sense of well-being, ensuring you leave feeling revitalized.",
   },
 ]
 
@@ -285,8 +189,8 @@ function ServicesSection() {
           </div>
         </FadeIn>
 
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, i) => (
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {services.map((service) => (
             <StaggerItem key={`${service.name}-${service.duration}`}>
               <Card className="h-full hover:shadow-md transition-shadow overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-400 to-gold-600" />
