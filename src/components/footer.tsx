@@ -17,7 +17,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-2 text-sm text-ivory-200/60">
               <MapPin className="h-4 w-4 text-gold-400" />
-              <span>Scottsdale, Arizona</span>
+              <span>Tucson, Arizona</span>
             </div>
             <p className="text-sm text-ivory-200/60">
               Call/Text: 480-549-7188
