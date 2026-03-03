@@ -118,7 +118,7 @@ function HeroSection() {
             <div className="mt-8 flex items-center justify-center gap-6 text-sm text-charcoal-700/60">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-gold-500" />
-                <span>9819 N 95th St, Scottsdale, AZ</span>
+                <span>6700 N Oracle Rd STE 236, Tucson, AZ 85704</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-gold-500" />
@@ -267,7 +267,7 @@ function CTASection() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-ivory-200/50">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-gold-400" />
-              <span>9819 N 95th St, Scottsdale, AZ</span>
+              <span>6700 N Oracle Rd STE 236, Tucson, AZ 85704</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-gold-400" />

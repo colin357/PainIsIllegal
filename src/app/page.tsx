@@ -880,7 +880,7 @@ function FAQSection() {
     {
       question: "Where are in-person sessions held?",
       answer:
-        "In-person sessions are conducted at a private location in Arizona. Exact location details and directions are provided after your booking request is confirmed. Availability is limited.",
+        "In-person sessions are held at 6700 N Oracle Rd STE 236, Tucson, AZ 85704. Availability is limited.",
     },
   ]
 
